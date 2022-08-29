@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1,
 
-FROM mcr.microsoft.com/dotnet/runtime:5.0
+FROM mcr.microsoft.com/dotnet/runtime:6.0
 
 LABEL project="Hangar"\
-      version="0.4" \
+      version="0.5" \
       mantainer="bileyg"\
       company="Ascon Complex"
 
@@ -22,5 +22,3 @@ RUN DEBIAN_FRONTEND="noninteractive"\
   mc
     
 RUN cd /App/libs && dpkg -i gcc-10-base_10.2.1-6_amd64.deb gcc-12-base_12-20220319-1_amd64.deb libgcc-s1_12-20220319-1_amd64.deb libstdc++6_10.2.1-6_amd64.deb
-    
-#COPY supervisor /etc/supervisor/conf.d/
