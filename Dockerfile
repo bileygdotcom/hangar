@@ -10,10 +10,6 @@ LABEL project="Hangar"\
 
 COPY libs /App/libs
 
-RUN cd /App/libs && dpkg -i gcc-10-base_10.2.1-6_amd64.deb gcc-12-base_12-20220319-1_amd64.deb libgcc-s1_12-20220319-1_amd64.deb libstdc++6_10.2.1-6_amd64.deb libicu63_63.1-6+deb10u3_amd64.deb packages-microsoft-prod.deb
-
-RUN rm -R /App/libs
-
 RUN apt-get update
 
 RUN DEBIAN_FRONTEND="noninteractive"\
@@ -22,11 +18,14 @@ RUN DEBIAN_FRONTEND="noninteractive"\
   #unzip\
   libgomp1\
   mupdf-tools\
-  #links\
+  links\
   #mc\
   libgdiplus
   
-RUN apt-get install -y dotnet-sdk-5.0
+RUN cd /App/libs && dpkg -i gcc-10-base_10.2.1-6_amd64.deb gcc-12-base_12-20220319-1_amd64.deb libgcc-s1_12-20220319-1_amd64.deb libstdc++6_10.2.1-6_amd64.deb libicu63_63.1-6+deb10u3_amd64.deb packages-microsoft-prod.deb
+RUN rm -R /App/libs
+RUN apt-get update
+RUN apt-get install -y dotnet-runtime-5.0
   
 
     
