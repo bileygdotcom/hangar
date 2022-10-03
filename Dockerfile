@@ -3,10 +3,12 @@
 FROM debian:bullseye-20220912
 
 LABEL project="Hangar"\
-      version="0.7"\
+      version="0.8"\
       mark="debian+dotnet"\
       mantainer="bileyg"\
       company="Ascon Complex"
+      
+ENV ASPNETCORE_URLS=http://+:80
 
 COPY libs /App/libs
 
