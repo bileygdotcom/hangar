@@ -3,7 +3,7 @@
 FROM debian:bullseye-20220912
 
 LABEL project="Hangar"\
-      version="0.8"\
+      version="0.9"\
       mark="debian+dotnet"\
       mantainer="bileyg"\
       company="Ascon Complex"
@@ -17,7 +17,7 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND="noninteractive"\
  apt-get install -y supervisor\
   #apt-utils\
-  #unzip\
+  unzip\
   libgomp1\
   mupdf-tools\
   links\
