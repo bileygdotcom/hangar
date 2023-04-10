@@ -3,7 +3,7 @@
 FROM debian:bullseye-20220912
 
 LABEL project="Hangar"\
-      version="1.0"\
+      version="1.1"\
       mark="debian_bullseye+dotnet_6.0"\
       mantainer="bileyg"\
       company="Ascon Complex"
