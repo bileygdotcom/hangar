@@ -31,7 +31,7 @@ RUN DEBIAN_FRONTEND="noninteractive"\
 #RUN cd /App/libs && dpkg -i packages-microsoft-prod.deb
 #RUN rm -R /App/libs
 #RUN apt-get update
-RUN apt-get install -y aspnetcore-runtime-6.0 && dotnet-sdk-6.0
+RUN apt-get install -y aspnetcore-runtime-6.0
   
 
     
