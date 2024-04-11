@@ -1,12 +1,12 @@
 # syntax=docker/dockerfile:1,
 
-FROM debian:bullseye-20220912
+FROM ubuntu:22.04
 
 LABEL project="Hangar"\
-      version="1.1"\
-      mark="debian_bullseye+dotnet_6.0"\
+      version="1.2"\
+      mark="u2204+dotnet_6.0"\
       mantainer="bileyg"\
-      company="Ascon Complex"
+      company="Ascon"
       
 ENV ASPNETCORE_URLS=http://+:80
 
