@@ -31,4 +31,4 @@ RUN rm packages-microsoft-prod.deb
 RUN apt-get update
 
 RUN apt-get install -qfy libcanberra-gtk-module libcanberra-gtk3-module
-RUN apt-get install -y aspnetcore-runtime-6.0
+RUN apt-get install -y aspnetcore-runtime-8.0
