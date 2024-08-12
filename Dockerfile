@@ -1,8 +1,8 @@
 FROM ubuntu:focal
 
 LABEL project="Hangar"\
-      version="1.4"\
-      mark="u2004+dotnet_6.0"\
+      version="1.5"\
+      mark="u2004+dotnet_8.0"\
       mantainer="bileyg"\
       company="Ascon"
       
